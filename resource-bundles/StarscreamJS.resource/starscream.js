@@ -6,7 +6,9 @@ j$(document).ready(function () {
     // style all buttons
     j$('button').addClass("btn btn-default");
     //style all form controls
-    j$('input').addClass('form-control');
+    j$('input').addClass("form-control");
+    // try to style the select lists
+    j$('select').addClass("dropdown-toggle");
 
     //redo the detail table into an unordered list
     j$('div.pbSubsection table').each(function () {
