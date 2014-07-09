@@ -28,33 +28,15 @@ select {
 	text-align: center;
 	word-wrap: break-word;
 }
-.FlowPageBlockBtns {
-	font-size: 14px;
-	margin: .5em 0;
-	padding: .7em 1em;
-	display: block;
-	position: relative;
-	text-align: center;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	white-space: nowrap;
-	cursor: pointer;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
+
 .FlowPreviousBtn {
 	float:left;
-	width: 40%;
 }
 .FlowNextBtn {
 	float:right;
-	width: 40%;
 }
 .FlowFinishBtn {
 	float:right;
-	width: 40%;
 }
 .FlowText {
 	width:100%!important;
