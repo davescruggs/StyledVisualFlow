@@ -1,15 +1,22 @@
-if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript requires jQuery') }
+if (typeof jQuery === 'undefined') { throw new Error('Starscream JavaScript requires jQuery') }
 
-var j$ = jQuery.noConflict();
+   var j$ = jQuery.noConflict();
 
 j$(document).ready(function () {
-    j$('div.productTable table').each(function () {
-        var list = j$("<ul/>");
+    // style all buttons
+    j$('button').addClass("btn btn-default");
+    //style all form controls
+    j$('input').addClass('form-control');
+
+    //redo the detail table into an unordered list
+    j$('div.pbSubsection table').each(function () {
+        var list = j$("<ul/>").addClass("list-group");
 
         j$(this).find("tr").each(function () {
             var p = j$(this).children().map(function () {
                 if (j$(this).find('table').length > 0) {
-                    var subList = j$("<ul/>");
+                    var subList = j$("<ul/>").addClass("list-group");
+                    subList.attr("id", j$(this).find('table').attr("id")) // assign the id from the table
 
                     var sP = j$(this).find('table').children().map(function () {
                         return "<p>" + j$(this).html() + "</p>";
