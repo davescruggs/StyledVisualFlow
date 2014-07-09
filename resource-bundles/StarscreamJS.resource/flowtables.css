@@ -1,0 +1,122 @@
+select {
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+input, button, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+input {
+	line-height: normal;
+	width: 95%;
+}
+input[type="radio"]{
+	width:15px;
+}
+input[type="checkbox"]{
+	width:15px;
+}
+label {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 5px;
+	font-weight: 700;
+}
+textarea {
+	width: 95%;
+}
+.last {
+	width: 2%;
+}
+.labelCol.empty {
+	width: 2%!important;
+}
+.dataCol.empty {
+	width: 2%!important;
+}
+.FlowContainer {
+	clear:both!important;
+	display:block!important;
+	width:100%!important;
+	float:none!important;
+	margin:0!important;
+	padding:0!important;
+	font-weight: normal;
+	font-size: 14px;
+	text-align: center;
+	word-wrap: break-word;
+}
+.FlowPageBlockBtns {
+	font-size: 14px;
+	margin: .5em 0;
+	padding: .7em 1em;
+	display: block;
+	position: relative;
+	text-align: center;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.FlowPreviousBtn {
+	float:left;
+	width: 40%;
+}
+.FlowNextBtn {
+	float:right;
+	width: 40%;
+}
+.FlowFinishBtn {
+	float:right;
+	width: 40%;
+}
+.FlowText {
+	width:100%!important;
+}
+.FlowTextArea {
+	width:100%!important;
+}
+.FlowNumber {}
+.FlowDate {}
+.FlowCurrency {}
+.FlowPassword {}
+.FlowRadio {}
+.FlowDropdown {
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #555555;
+	background-color: inherit;
+	background-image: none;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	color: inherit;
+	font: inherit;
+	display: table-cell;
+	margin: 0;
+	height: auto;
+}

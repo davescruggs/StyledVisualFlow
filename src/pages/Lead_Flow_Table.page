@@ -1,0 +1,17 @@
+<apex:page sidebar="false" showHeader="false" standardStylesheets="true">
+<head>
+	<title>Lead Management Flow with Tables</title>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="description" content=""/>
+	<meta name="author" content=""/>
+
+
+	<apex:stylesheet value="{!URLFOR($Resource.StarscreamJS, 'flowtables.css')}" />
+	<apex:includeScript value="{!URLFOR($Resource.jQuery, '/jquery/jquery-1.11.1.js')}" />
+</head>
+<body>
+	<flow:interview name="Lead_Form_Sample" ></flow:interview>
+</body>
+</apex:page>
