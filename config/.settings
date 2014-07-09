@@ -1,0 +1,20 @@
+{
+    "username": "dscruggs@elevate.adv", 
+    "environment": "production", 
+    "project_name": "Flows", 
+    "workspace": "/Users/dscruggs/MMProjects", 
+    "org_url": "", 
+    "namespace": "", 
+    "id": "FKFODPELQF32SFLB7LRQRV32UU76PG8N", 
+    "metadata_container": "1dcU0000000Gvz5IAC", 
+    "subscription": [
+        "ApexClass", 
+        "ApexComponent", 
+        "ApexPage", 
+        "ApexTrigger", 
+        "CustomObject", 
+        "Flow", 
+        "Profile", 
+        "StaticResource"
+    ]
+}

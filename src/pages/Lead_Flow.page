@@ -1,0 +1,28 @@
+<apex:page sidebar="false" showheader="false" standardStylesheets="false" docType="html-5.0"  >
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="description" content=""/>
+	<meta name="author" content=""/>
+
+
+	<title>Transformed Lead Flow with Bootstrap</title>
+
+	<!-- Bootstrap core CSS -->
+	<apex:stylesheet value="{!URLFOR($Resource.bootstrap, '/css/bootstrap.min.css')}" />
+	<apex:includeScript value="{!URLFOR($Resource.jQuery, '/jquery/jquery-1.11.1.js')}" />
+	<script >
+		j$ = jQuery.noConflict();
+	</script>
+	<apex:includeScript value="{!URLFOR($Resource.bootstrap, '/js/bootstrap.js')}" />
+	<apex:includeScript value="{!URLFOR($Resource.StarscreamJS, 'starscream.js')}" />
+
+</head>
+
+<body>
+	<flow:interview name="Lead_Form_Sample" ></flow:interview>
+</body>
+</html>
+</apex:page>
