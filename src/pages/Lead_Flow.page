@@ -14,7 +14,7 @@
 	<apex:stylesheet value="{!URLFOR($Resource.bootstrap, '/css/bootstrap.min.css')}" />
 	<apex:includeScript value="{!URLFOR($Resource.jQuery, '/jquery/jquery-1.11.1.js')}" />
 	<script >
-		j$ = jQuery.noConflict();
+		var j$ = jQuery.noConflict();
 	</script>
 	<apex:includeScript value="{!URLFOR($Resource.bootstrap, '/js/bootstrap.js')}" />
 	<apex:includeScript value="{!URLFOR($Resource.StarscreamJS, 'starscream.js')}" />

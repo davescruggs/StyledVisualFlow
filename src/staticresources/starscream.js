@@ -1,3 +1,7 @@
+if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript requires jQuery') }
+
+var j$ = jQuery.noConflict();
+
 j$(document).ready(function () {
     j$('div.productTable table').each(function () {
         var list = j$("<ul/>");
