@@ -1,28 +1,32 @@
-$(document).ready(function () {
-    $('div.productTable table').each(function () {
-        var list = $("<ul/>");
+if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript requires jQuery') }
 
-        $(this).find("tr").each(function () {
-            var p = $(this).children().map(function () {
-                if ($(this).find('table').length > 0) {
-                    var subList = $("<ul/>");
+var j$ = jQuery.noConflict();
 
-                    var sP = $(this).find('table').children().map(function () {
-                        return "<p>" + $(this).html() + "</p>";
+j$(document).ready(function () {
+    j$('div.productTable table').each(function () {
+        var list = j$("<ul/>");
+
+        j$(this).find("tr").each(function () {
+            var p = j$(this).children().map(function () {
+                if (j$(this).find('table').length > 0) {
+                    var subList = j$("<ul/>");
+
+                    var sP = j$(this).find('table').children().map(function () {
+                        return "<p>" + j$(this).html() + "</p>";
                     });
 
-                    subList.append("<li>" + $.makeArray(sP).join("") + "</li>");
+                    subList.append("<li>" + j$.makeArray(sP).join("") + "</li>");
 
-                    return $('<div />').append($('<p />').append(subList)).html();
+                    return j$('<div />').append(j$('<p />').append(subList)).html();
                 }
                 else {
-                    return "<p>" + $(this).html() + "</p>";
+                    return "<p>" + j$(this).html() + "</p>";
                 }
             });
 
-            list.append("<li>" + $.makeArray(p).join("") + "</li>");
+            list.append("<li>" + j$.makeArray(p).join("") + "</li>");
         });
 
-        $(this).replaceWith(list);
+        j$(this).replaceWith(list);
     });
 });
