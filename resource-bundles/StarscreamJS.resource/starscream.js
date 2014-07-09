@@ -21,9 +21,15 @@ j$(document).ready(function () {
                 if (j$(this).find('table').length > 0) {
                     var subList = j$("<ul/>").addClass("list-group");
                     subList.attr("id", j$(this).find('table').attr("id")) // assign the id from the table
+                    // remove the flow ".empty" table cells
+                    j$(".empty").remove();
 
                     var sP = j$(this).find('table').children().map(function () {
-                        return "<p>" + j$(this).html() + "</p>";
+                        var tmpPara = "<p>" + j$(this).html().trim() + "</p>";
+                        if (tmpPara ===  "<p></p>"){
+                            tmpPara = "";
+                        }
+                        return tmpPara;
                     });
 
                     subList.append("<li>" + j$.makeArray(sP).join("") + "</li>");

@@ -1,4 +1,5 @@
-<apex:page sidebar="false" showheader="false" standardStylesheets="false" docType="html-5.0"  >
+<apex:page sidebar="false" showheader="false" standardStylesheets="false" docType="html-5.0" applyHtmlTag="false" >
+<html>
 <head>
 	<meta charset="utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -24,4 +25,5 @@
 <body>
 	<flow:interview name="Lead_Form_Sample" ></flow:interview>
 </body>
+</html>
 </apex:page>
