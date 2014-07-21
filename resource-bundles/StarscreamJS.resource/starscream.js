@@ -49,7 +49,7 @@ j$(document).ready(function () {
         // remove empty paragraphs
         list.find('p:empty').remove();
         list.find('p').each(function(index, item) {
-            if(j$.trim(j$(item).text()) === "" && j$(item).children().length() === 0) {
+            if(j$.trim(j$(item).text()) === "" && j$(item).children().length === 0) {
                 j$(item).slideUp();
                 j$(item).remove();
             }
