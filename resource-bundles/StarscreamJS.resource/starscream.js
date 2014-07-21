@@ -29,7 +29,7 @@ j$(document).ready(function () {
                         var tmpPara = "<p>" + j$(this).html().trim() + "</p>";
                         tmpPara.addClass(this.attr("class"));
 
-                        if (tmpPara ===  "<p></p>"){
+                        if (tmpPara.trim() ===  "<p></p>"){
                             tmpPara = "";
                         }
                         return tmpPara;
@@ -40,13 +40,15 @@ j$(document).ready(function () {
                     return j$('<div />').append(j$('<p />').append(subList)).html();
                 }
                 else {
-                    return "<p>" + j$(this).html() + "</p>";
+                    return "<p>" + j$(this).html().trim() + "</p>";
                 }
             });
 
             list.append("<li>" + j$.makeArray(p).join("") + "</li>");
         });
+        // remove empty paragraphs
         list.find('p:empty').remove();
+
 
         j$(this).replaceWith(list);
     });
