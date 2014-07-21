@@ -48,9 +48,9 @@ j$(document).ready(function () {
         });
         // remove empty paragraphs
         list.find('p:empty').remove();
-        list.$('p').each(function(index, item) {
-            if($.trim($(item).text()) === "") {
-                $(item).slideUp(); // $(item).remove();
+        list.j$('p').each(function(index, item) {
+            if(j$.trim($(item).text()) === "") {
+                j$(item).slideUp(); // $(item).remove();
             }
         });
 
