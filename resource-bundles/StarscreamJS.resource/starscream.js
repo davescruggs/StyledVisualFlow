@@ -23,9 +23,12 @@ j$(document).ready(function () {
                     subList.attr("id", j$(this).find('table').attr("id")) // assign the id from the table
                     // remove the flow ".empty" table cells
                     j$(".empty").remove();
+                    j$("td:empty").remove();
 
                     var sP = j$(this).find('table').children().map(function () {
                         var tmpPara = "<p>" + j$(this).html().trim() + "</p>";
+                        tmpPara.addClass(this.attr("class"));
+
                         if (tmpPara ===  "<p></p>"){
                             tmpPara = "";
                         }
@@ -43,6 +46,7 @@ j$(document).ready(function () {
 
             list.append("<li>" + j$.makeArray(p).join("") + "</li>");
         });
+        list.find('p:empty').remove();
 
         j$(this).replaceWith(list);
     });

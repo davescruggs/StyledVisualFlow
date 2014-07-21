@@ -15,9 +15,6 @@
 	<apex:stylesheet value="{!URLFOR($Resource.StarscreamJS, 'starscream.css')}" />
 	<apex:includeScript value="{!URLFOR($Resource.jQuery, '/jquery/jquery-1.11.1.js')}" />
 	<apex:includeScript value="{!URLFOR($Resource.bootstrap, '/js/bootstrap.js')}" />
-	<script >
-
-	</script>
 	<apex:includeScript value="{!URLFOR($Resource.StarscreamJS, 'starscream.js')}" />
 
 </head>
