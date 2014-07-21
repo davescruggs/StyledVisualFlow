@@ -48,6 +48,11 @@ j$(document).ready(function () {
         });
         // remove empty paragraphs
         list.find('p:empty').remove();
+        list.$('p').each(function(index, item) {
+            if($.trim($(item).text()) === "") {
+                $(item).slideUp(); // $(item).remove();
+            }
+        });
 
 
         j$(this).replaceWith(list);
